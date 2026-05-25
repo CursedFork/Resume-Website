@@ -614,6 +614,7 @@
         <div class="skill-chips">
           <span class="chip comfortable">Python</span>
           <span class="chip comfortable">JavaScript</span>
+          <span class="chip comfortable">TypeScript</span>
           <span class="chip comfortable">C / C++</span>
           <span class="chip comfortable">Java</span>
           <span class="chip">HTML / CSS</span>
@@ -626,6 +627,11 @@
         <div class="skill-card-title">Frameworks &amp; Libraries</div>
         <div class="skill-chips">
           <span class="chip comfortable">React</span>
+          <span class="chip comfortable">Supabase</span>
+          <span class="chip">Next.js</span>
+          <span class="chip">Vite</span>
+          <span class="chip">Claude API</span>
+          <span class="chip">Web3Forms</span>
           <span class="chip">Pandas</span>
           <span class="chip">Qiskit</span>
           <span class="chip">Dialogflow ES</span>
@@ -637,7 +643,9 @@
         <div class="skill-card-title">Tools &amp; Environments</div>
         <div class="skill-chips">
           <span class="chip">VS Code</span>
+          <span class="chip">Claude Code</span>
           <span class="chip">Git</span>
+          <span class="chip">Vercel</span>
           <span class="chip">Linux Mint</span>
           <span class="chip">Debian</span>
           <span class="chip">Kali Linux</span>
@@ -697,12 +705,93 @@
     </div>
 
     <div class="tabs reveal">
-      <button class="tab-btn active" data-tab="personal">Personal</button>
+      <button class="tab-btn active" data-tab="freelance">Freelance</button>
+      <button class="tab-btn" data-tab="personal">Personal</button>
       <button class="tab-btn" data-tab="academic">Academic</button>
     </div>
 
+    <!-- FREELANCE PROJECTS -->
+    <div id="freelance" class="tab-content active">
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">SubPlan Generator</div>
+            <div class="project-links">
+              <a href="https://subplan-generator.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">↗ Live</a>
+              <a href="https://github.com/CursedFork/subplan-generator" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+            </div>
+          </div>
+          <p class="project-desc">A SaaS tool for K–12 substitute teachers to generate ready-to-print lesson plans in minutes. Built with React and TypeScript, backed by Supabase for authentication (email, Google, and Apple sign-in) and database. The Claude AI API powers the plan generation. Stripe integration and PDF/DOCX export are in active development.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">Supabase</span>
+            <span class="project-tag">Claude API</span>
+            <span class="project-tag">Vite</span>
+            <span class="project-tag">Vercel</span>
+          </div>
+          <span class="project-meta">Solo · In Active Development</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">MathForge</div>
+            <div class="project-links">
+              <a href="https://mathforge-by-cursedfork.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">↗ Live</a>
+              <a href="https://github.com/CursedFork/mathquest" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+            </div>
+          </div>
+          <p class="project-desc">A free, no-signup arcade math platform for grades 2–8 that turns traditional drill worksheets into replayable mini-games. Includes Arithmetic Rush, Fraction Frenzy, Coordinate Blast, Equation Solver, and more. Features adaptive difficulty, XP and streak tracking, and combo multipliers for consecutive correct answers.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Vercel</span>
+          </div>
+          <span class="project-meta">Solo · Deployed</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">Protocol+</div>
+            <div class="project-links">
+              <a href="https://protocol-plus-by-cursedfork.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">↗ Live</a>
+              <a href="https://github.com/CursedFork/ProtocolPlus" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+            </div>
+          </div>
+          <p class="project-desc">A personal health dashboard presenting structured diet and exercise guidelines. Designed to give users a clear, organized reference for building sustainable routines — not medical advice, but a practical starting point for people who want their health information in one place.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Vercel</span>
+          </div>
+          <span class="project-meta">Solo · Deployed</span>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-name">Newborn+</div>
+            <div class="project-links">
+              <a href="https://newborn-plus.vercel.app/home" target="_blank" rel="noopener noreferrer" class="project-link">↗ Live</a>
+              <a href="https://github.com/CursedFork/Newborn-Plus" target="_blank" rel="noopener noreferrer" class="project-link">↗ GitHub</a>
+            </div>
+          </div>
+          <p class="project-desc">A tracker for new parents to log and monitor their newborn's early development milestones. Uses Supabase for backend and authentication, with passwordless magic link sign-in so parents can get in quickly without managing a password.</p>
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Supabase</span>
+            <span class="project-tag">Magic Link Auth</span>
+            <span class="project-tag">JavaScript</span>
+            <span class="project-tag">Vercel</span>
+          </div>
+          <span class="project-meta">Solo · Deployed</span>
+        </div>
+
+      </div>
+    </div>
+
     <!-- PERSONAL PROJECTS -->
-    <div id="personal" class="tab-content active">
+    <div id="personal" class="tab-content">
       <div class="projects-grid">
 
         <div class="project-card">
@@ -712,11 +801,12 @@
               <a href="https://andrews-tutoring.vercel.app" target="_blank" rel="noopener noreferrer" class="project-link">↗ Live</a>
             </div>
           </div>
-          <p class="project-desc">A client-facing React SPA for my freelance tutoring business. Includes subject and pricing listings, an EmailJS contact form, and Calendly booking integration. Built with AI assistance and manually reviewed for security before deployment.</p>
+          <p class="project-desc">A client-facing React SPA for my freelance tutoring business. Includes subject and pricing listings, a Web3Forms contact form (serverless email forwarding — no backend required), and Calendly booking integration. Built with AI assistance and manually reviewed for security before deployment.</p>
           <div class="project-tags">
             <span class="project-tag">React</span>
             <span class="project-tag">JavaScript</span>
-            <span class="project-tag">EmailJS</span>
+            <span class="project-tag">Web3Forms</span>
+            <span class="project-tag">Calendly</span>
             <span class="project-tag">Vercel</span>
           </div>
           <span class="project-meta">Solo · Deployed &amp; Maintained</span>
